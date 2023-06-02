@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive bottom navigation</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- <a href="#" class="nav__logo">Marlon</a> -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-alt nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Info</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book-alt nav__icon'></i>
+                            <span class="nav__name">Lokasi</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            <span class="nav__name">Gallery</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contactme" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__name">Contactme</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 
+            <img src="assets/img/perfil.png" alt="" class="nav__img"> -->
+        </nav>
+    </header>
+
+    <!--=============== Opwning ===============-->
+    <section id="cover">
+        <div class="sampul">
+            <div class="sampul-bgtrans">
+                <div class="sampul_conten ">
+                    <div class="row justify-content-center">
+                        <div class="text-center mt-5">
+                            <h2>Wedding Invitations</h2>
+                            <div class="nama_sambung text-white">Maulana & Ikke</div>
+                            <P>19 Maret 2023</P>
+                            <a class="btn-sampul" href="#home" onclick="openUdangan()"> <i
+                                    class="bx bx-envelope-open"></i> Buka
+                                Undangan</a>
+                            <P>Kepada Yth. Bapak/Ibu/Saudara/i :</P>
+                            <P><b>TAMU UNDANGAN</b></P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="maintext">
+
+        <!--=============== HOME ===============-->
+        <section class="profile" id="home">
+            <!-- <h2 class="section__title">Homes</h2> -->
+            <!-- <div class="nama_sambung">
+                <h1>Maulana & Ikke</h1>
+            </div> -->
+            <div class="row justify-content-center">
+                <h4 class="text-center mb-2 ">The Wedding Of</h4>
+                <div class="col-sm-4">
+                    <div class="">
+                        <div class="text-center">
+                            <img src="assets/img/woman.jpeg" class="img-profile" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center txt-nama">Ikke Suhar Listianingsih</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="">
+                        <b>dan</b>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="">
+                        <div class="text-center">
+                            <img src="assets/img/men.jpg" class="img-profile" alt="..." />
+                        </div>
+                        <div class="card-body">
+                            <h3 class=" text-center txt-nama">Maulana Syarief Hidayat</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class=" row " id="about">
+            <div class="info">
+                <div class="row mt-5">
+                    <!-- <h2 class="section__title">About</h2> -->
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6">
+                            <h3 class="text-center">بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</h3>
+                            <p class="text-center">
+                                Assalamu’alaikum Wr. Wb.
+                                Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala, insyaaAllah kami akan
+                                menyelenggarakan acara pernikahan :</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3">
+                        <div class="col-sm-5">
+                            <div class="card-body text-end">
+                                <h1 class="txt_sambung">Ikke Suhar Listianingsih</h1>
+                                <p><b>Putri Pertama dari Bpk. Sohar & Ibu Sulisyani</b></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-1 mt-4">
+                            <div class="card-body text-center">
+                                <h5><b>Dengan</b></h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="card-body">
+                                <h1 class="txt_sambung">Maulana Syarief Hidayat</h1>
+                                <p><b>Putra Pertama dari Bpk. Suyatno & Ibu Anye Mardiana</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-2 mb-5">
+                        <div class="col-sm-10 quotes">
+                            <p class="text-center">
+                                <b>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri
+                                    dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan
+                                    dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu
+                                    benar-benar terdapat tanda-tanda bagi kaum yang berfikir.”
+                                </b>
+                            </p>
+                            <p class="text-center mt-2">
+                                <b>Al-Qur’an Surat Ar-Ruum (30:21)</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="container" id="skills">
+            <h4 class="text-center mt-3 mb-5">Lokasi</h4>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class=" text-center">
+                        <h5> <b>Akad Nikah </b> </h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h4> <i class="bx bx-calendar"></i> Kamis, 13 Juli 2023</h4>
+                                <p> <i class="bx bx-timer "></i> Pukul : 09.00 WIB s/d Selesai</p>
+                            </li>
+                            <li class="list-group-item">
+                                <p>Alamat</p>
+                                Kediaman Mempelai Wanita
+                                Perum Villa Asri 2 Wanaherang
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d882.2363880223747!2d106.93639360173876!3d-6.424510748741824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699518cfea1be3%3A0x3e1400844319dd4d!2sPerum%20Villa%20Asri%202!5e1!3m2!1sid!2sid!4v1684650207900!5m2!1sid!2sid"
+                        style="border:0; width: 100%; height: 350px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== PORTFOLIO ===============-->
+        <section class="container section section__height" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+        </section>
+
+        <!--=============== CONTACTME ===============-->
+        <section class="container section section__height" id="contactme">
+            <h2 class="section__title">Contactme</h2>
+        </section>
+    </main>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
