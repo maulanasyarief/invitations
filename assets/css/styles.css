@@ -293,10 +293,10 @@ img {
   margin: 0 auto;
   padding: 25px;
   background-color: #FFF;
-  background-image: url('../img/bg_pink01.jpg');
+  background-image: url('../img/bg_border.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100vh;
+  background-size: 100% 100%;
 }
 
 .profile_content {
@@ -338,6 +338,10 @@ img {
   color: #FFF;
   background-color: #b76a7e;
   padding: 25px;
+  background-image: url('../img/bg_border01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .card_trans_white {
@@ -372,6 +376,10 @@ img {
   background-color: #f6c1d1;
   padding: 25px;
   color: #b76a7e;
+  background-image: url('../img/bg_border01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 
@@ -386,11 +394,15 @@ img {
 
 .ucapan {
   width: 50%;
-  height: 90vh;
+  height: auto;
   margin: 0 auto;
   color: #FFF;
   background-color: #8a86b9;
   padding: 25px;
+  background-image: url('../img/bg_border01.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 
@@ -479,10 +491,6 @@ img {
   }
 
   .profile {
-    background-image: url('../img/bg_pink01_mobile.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100vh;
     width: 100%;
     padding: 15px;
   }

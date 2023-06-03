@@ -116,7 +116,7 @@ function ShowImageGaleri() {
     for (var i = 1; i <= counter; i++) {
         //console.log(i);
         objGaleri.innerHTML += `
-        <div class="col-md-3">
+        <div class="col-md-4 mt-2">
             <a class="example-image-link" href="./assets/img/my/img_` + i + `.jpeg"
                 data-lightbox="example-set"
                 data-title="klik sisi kanan / kiri foto untuk next foto."><img
