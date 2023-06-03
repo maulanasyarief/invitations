@@ -198,18 +198,18 @@ img {
   font-weight: 600;
   font-style: normal;
   font-size: 58px;
-  letter-spacing: -.02em;
+  letter-spacing: -.04em;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: #62ad9d;
+  color: #b76a7e;
 }
 
 .text-dan {
   font-weight: 600;
   font-style: italic;
-  font-size: 24px;
-  letter-spacing: -.02em;
+  font-size: 26px;
+  letter-spacing: -.03em;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: #62ad9d;
+  color: #b76a7e;
 }
 
 .txt-nama2 {
@@ -289,9 +289,10 @@ img {
 
 .profile {
   width: 50%;
-  height: 90vh;
+  min-height: auto;
+  min-height: 90vh;
   margin: 0 auto;
-  padding: 25px;
+  padding: 35px;
   background-color: #FFF;
   background-image: url('../img/bg_border.png');
   background-repeat: no-repeat;
@@ -361,11 +362,12 @@ img {
 }
 
 .card_counter {
-  background-color: #f6c1d1;
+  background-color: #fdf2e6;
   width: 100%;
-  padding: 10px;
-  border-radius: 5%;
+  padding: 20px;
+  border-radius: 50%;
   color: #b76a7e;
+  border: solid 2px #b76a7e;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -521,6 +523,12 @@ img {
 
   .card_trans_white {
     border-radius: 10px;
+  }
+
+  .card_counter {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50%;
   }
 
 }
