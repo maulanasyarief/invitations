@@ -13,23 +13,30 @@ const objDetik = document.getElementById("detik");
 const objMusik = document.getElementById("myMusic");
 const objGaleri = document.getElementById("img_geleri");
 
+const btnCover = document.getElementById("btnCover");
+var delayInMilliseconds = 2000; //1 second
+
 window.addEventListener('load', () => {
+
     counterdown();
     ShowImageGaleri();
-
     objMainext.style.display = "none";
     objMenu.style.display = "none";
 });
 
 function openUdangan() {
+    btnCover.textContent = "Loading...";
+    setTimeout(function () {
+        // runing after delay finish
+        objCover.style.cssText = `
+            animation: swing-left-fwd 4s ease 1 normal forwards;
+            `;
 
-    objCover.style.cssText = `
-    animation: swing-left-fwd 4s ease 1 normal forwards;
-    `;
+        objMainext.style.display = "block";
+        objMenu.style.display = "block";
+        playAudio();
+    }, delayInMilliseconds);
 
-    objMainext.style.display = "block";
-    objMenu.style.display = "block";
-    playAudio();
 }
 
 

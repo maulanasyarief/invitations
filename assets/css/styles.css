@@ -200,7 +200,7 @@ img {
   font-size: 58px;
   letter-spacing: -.04em;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: #b76a7e;
+  color: #ef776b;
 }
 
 .text-dan {
@@ -209,7 +209,7 @@ img {
   font-size: 26px;
   letter-spacing: -.03em;
   text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  color: #b76a7e;
+  color: #ef776b;
 }
 
 .txt-nama2 {
@@ -290,7 +290,7 @@ img {
   margin: 0 auto;
   padding: 35px;
   background-color: #FFF;
-  background-image: url('../img/bg_border.png');
+  background-image: url('../img/bg_flowerDeks.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -490,6 +490,10 @@ img {
   }
 
   .profile {
+    background-image: url('../img/bg_flowerMbl.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     width: 100%;
     padding: 15px;
   }
