@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--=============== AOS CDn ===============-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/lightbox.min.css">
@@ -65,6 +67,13 @@
             <!-- 
             <img src="assets/img/perfil.png" alt="" class="nav__img"> -->
         </nav>
+
+
+        <div class="btn_play">
+            <a onclick="OnOffMusic();">
+                <i id="icon-sound" class='bx bx-pause'></i>
+            </a>
+        </div>
     </header>
 
     <!--=============== Opweing Cover ===============-->
@@ -155,7 +164,7 @@
                             <p class="text-center "><b>Assalamu’alaikum Wr. Wb.</b></p>
                         </div>
 
-                        <div class="card_trans_white">
+                        <div class="card_trans_white" data-aos="fade-up">
                             <!-- <h2 class="section__title">About</h2> -->
                             <div class="row  justify-content-center">
                                 <div class="col-sm-12">
@@ -211,7 +220,7 @@
                         <div class="txt_titel_pink">
                             <p class="text-center "><b>Acara Kami</b></p>
                         </div>
-                        <div class="card_trans_white">
+                        <div class="card_trans_white" data-aos="zoom-in">
                             <div class="text-center">
                                 <ul class="list-group ">
                                     <li class="fw-bold">
@@ -248,7 +257,7 @@
                         <div class="txt_titel">
                             <p class="text-center "><b>Gallery Foto</b></p>
                         </div>
-                        <div class="card_trans_white">
+                        <div class="card_trans_white" data-aos="zoom-in">
                             <div class="row justify-content-center" id="img_geleri">
                             </div>
                         </div>
@@ -258,16 +267,15 @@
         </section>
 
         <!--=============== CONTACTME ===============-->
-        <section class="section" id="ucapan">
+        <section id="ucapan">
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-center" data-aos="zoom-in">
                     <div class="ucapan">
                         <div class="txt_titel">
                             <p class="text-center "><b>Ucapan</b></p>
                         </div>
 
                         <div class="card_trans_white">
-                            <!-- <h2 class="section__title">About</h2> -->
                             <div class="row  justify-content-center">
                                 <div class="col-sm-12">
                                     <p class="text-center">
@@ -289,19 +297,19 @@
                             <p class="text-center ">Tetap Patuhi Protokol Kesehatan</p>
                         </div>
                         <div class="row  justify-content-center">
-                            <div class="col-4">
+                            <div class="col-4" data-aos="fade-right">
                                 <div class="card_trans_white">
                                     <img src="./assets/img/disten.png" alt="Jaga Jarak">
                                     <b class="text-center">Jaga jarak</b>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4" data-aos="fade-right">
                                 <div class="card_trans_white">
                                     <img src="./assets/img/masker.png" alt="Jaga Jarak">
                                     <b class="text-center">Pakai Masker</b>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-4" data-aos="fade-right">
                                 <div class="card_trans_white">
                                     <img src="./assets/img/wash.png" alt="Jaga Jarak">
                                     <b class="text-center">Cuci Tangan</b>
@@ -325,8 +333,8 @@
             </div>
         </section>
     </main>
-
-
+    <!--=============== AOS JS ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/lightbox-plus-jquery.min.js"></script>

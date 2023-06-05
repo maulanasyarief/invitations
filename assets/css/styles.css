@@ -117,6 +117,22 @@ img {
 }
 
 /*=============== NAV ===============*/
+.btn_play {
+  position: fixed;
+  width: 25px;
+  bottom: 15%;
+  left: 25%;
+  font-size: 20px;
+  color: #FFF;
+  border-radius: 50%;
+  background-color: #933f55;
+  box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+  height: 30px;
+  padding: 2px;
+  align-content: center;
+  transition: .4s;
+}
+
 .nav {
   position: fixed;
   width: 50%;
@@ -143,6 +159,59 @@ img {
 }
 
 
+.nav__list,
+.nav__link {
+  display: flex;
+}
+
+.nav__link {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+.nav__list {
+  justify-content: space-around;
+  width: 100%;
+  margin-left: -20px;
+  margin-bottom: -5px;
+}
+
+.nav__name {
+  font-size: var(--tiny-font-size);
+  /* display: none;*/
+  /* Minimalist design, hidden labels */
+}
+
+.nav__icon {
+
+  font-size: 1.5rem;
+}
+
+/*Active link*/
+.active-link {
+  /* position: relative;
+  color: var(--first-color);
+  transition: .3s; */
+  color: var(--first-color);
+  border-bottom: #b76a7e solid 3px;
+  transition: .9s;
+}
+
+/* Minimalist design, active link */
+.active-link::before {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  width: 4px;
+  height: 4px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+}
+
+/*=============== NAV ===============*/
 /* #homes {
   background-repeat: no-repeat;
   background-image: url('/assets/img/bg-01.png');
@@ -414,58 +483,6 @@ img {
 }
 
 
-.nav__list,
-.nav__link {
-  display: flex;
-}
-
-.nav__link {
-  flex-direction: column;
-  align-items: center;
-  row-gap: 4px;
-  color: var(--title-color);
-  font-weight: 600;
-}
-
-.nav__list {
-  justify-content: space-around;
-  width: 100%;
-  margin-left: -20px;
-  margin-bottom: -5px;
-}
-
-.nav__name {
-  font-size: var(--tiny-font-size);
-  /* display: none;*/
-  /* Minimalist design, hidden labels */
-}
-
-.nav__icon {
-
-  font-size: 1.5rem;
-}
-
-/*Active link*/
-.active-link {
-  /* position: relative;
-  color: var(--first-color);
-  transition: .3s; */
-  color: var(--first-color);
-  border-bottom: #b76a7e solid 3px;
-  transition: .9s;
-}
-
-/* Minimalist design, active link */
-.active-link::before {
-  content: '';
-  position: absolute;
-  bottom: -.5rem;
-  width: 4px;
-  height: 4px;
-  background-color: var(--first-color);
-  border-radius: 50%;
-}
-
 /* Change background header */
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
@@ -487,6 +504,10 @@ img {
     align-content: center;
     border-radius: 1.25rem 1.25rem 0 0;
     transition: .4s;
+  }
+
+  .btn_play {
+    left: 5%;
   }
 
   .profile {
@@ -531,6 +552,7 @@ img {
     padding: 5%;
   }
 
+
 }
 
 /* For small devices */
@@ -539,6 +561,11 @@ img {
   .nav__name {
     display: none;
   }
+
+  .btn_play {
+    left: 5%;
+  }
+
 
   .profile {
     width: 100%;

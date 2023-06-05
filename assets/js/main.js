@@ -14,9 +14,15 @@ const objMusik = document.getElementById("myMusic");
 const objGaleri = document.getElementById("img_geleri");
 
 const btnCover = document.getElementById("btnCover");
-var delayInMilliseconds = 2000; //1 second
+const iconSound = document.getElementById("icon-sound");
+var delayInMilliseconds = 100; //1 second
+
+var prmISplayMusic = false;
 
 window.addEventListener('load', () => {
+
+    //Lib aimation on Scroll
+    AOS.init();
 
     counterdown();
     ShowImageGaleri();
@@ -111,10 +117,12 @@ function counterdown() {
 
 function playAudio() {
     objMusik.play();
+    prmISplayMusic = true;
 }
 
 function pauseAudio() {
     objMusik.pause();
+    prmISplayMusic = false;
 }
 
 function ShowImageGaleri() {
@@ -132,4 +140,18 @@ function ShowImageGaleri() {
         `;
     }
 
+}
+
+function OnOffMusic() {
+
+
+    if (prmISplayMusic) {
+        pauseAudio();
+        iconSound.classList.remove('bx-pasue');
+        iconSound.classList.toggle('bx-play');
+    } else {
+        playAudio();
+        iconSound.classList.remove('bx-play');
+        iconSound.classList.toggle('bx-pasue');
+    }
 }
