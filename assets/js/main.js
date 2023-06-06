@@ -19,6 +19,11 @@ var delayInMilliseconds = 100; //1 second
 
 var prmISplayMusic = false;
 
+// get nama Undangan in URL
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const objNamaTamu = document.getElementById("nama_undangan");
+
 window.addEventListener('load', () => {
 
     //Lib aimation on Scroll
@@ -26,8 +31,9 @@ window.addEventListener('load', () => {
 
     counterdown();
     ShowImageGaleri();
-    objMainext.style.display = "none";
-    objMenu.style.display = "none";
+    // objMainext.style.display = "none";
+    // objMenu.style.display = "none";
+    setNamaTamu();
 });
 
 function openUdangan() {
@@ -66,7 +72,6 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
-
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
@@ -154,4 +159,15 @@ function OnOffMusic() {
         iconSound.classList.remove('bx-play');
         iconSound.classList.toggle('bx-pasue');
     }
+}
+
+function setNamaTamu() {
+    //?nama=(nama user)
+    const prmTamuUndangan = urlParams.get('nama');
+    if (prmTamuUndangan == null) {
+        objNamaTamu.textContent = "TAMU UNDANGAN";
+    } else {
+        objNamaTamu.textContent = prmTamuUndangan;
+    }
+    console.log(prmTamuUndangan);
 }
