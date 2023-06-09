@@ -547,12 +547,6 @@ img {
     border-radius: 10px;
   }
 
-
-  .sampul_conten {
-    padding: 5%;
-  }
-
-
 }
 
 /* For small devices */
@@ -595,9 +589,6 @@ img {
     border-radius: 10px;
   }
 
-  .sampul_conten {
-    padding: 5%;
-  }
 
 }
 
@@ -701,7 +692,7 @@ img {
 
   100% {
     -webkit-transform: translateY(-100px);
-    transform: translateY(-700px);
+    transform: translateY(-900px);
   }
 }
 
@@ -713,7 +704,7 @@ img {
 
   100% {
     -webkit-transform: translateY(-100px);
-    transform: translateY(-700px);
+    transform: translateY(-900px);
   }
 }
 
