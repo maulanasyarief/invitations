@@ -37,17 +37,12 @@ window.addEventListener('load', () => {
 });
 
 function openUdangan() {
-    btnCover.textContent = "Loading...";
+    btnCover.textContent = "Open...";
     setTimeout(function () {
         // runing after delay finish
         objCover.style.cssText = `
-            animation-iteration-count: 1;
-            animation: slide-top 1.5s ease;
+            animation: slide-top 1.5s ease 1 alternate forwards;
             `;
-
-        setTimeout(function () {
-            objCover.style.display = "none";
-        }, 700);
 
         objMainext.style.display = "block";
         objMenu.style.display = "block";
