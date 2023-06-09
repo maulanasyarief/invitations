@@ -245,19 +245,31 @@
 
                         <div class="card_trans_white">
                             <form>
+                                <div id="alertUcapan" style="display:none;">
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <strong id="namaTamu-alert"></strong>
+                                        <p> Jagan Lupa dateng ya.😇 Terima kasih ...</p>
+                                    </div>
+                                </div>
                                 <div class="form-group mt-2">
                                     <label class="text-start">Nama</label>
-                                    <input type="text" class="form-control" id="nama" placeholder="nama">
+                                    <input type="text" class="form-control" id="namaTamu" placeholder="nama"
+                                        maxlength="10">
                                 </div>
                                 <div class="form-group mt-2">
                                     <label class="text-start"> Ucapan </label>
-                                    <textarea class="form-control" id="ucapan" rows="4"></textarea>
+                                    <textarea class="form-control" id="ucapanTamu" rows="4" maxlength="50"></textarea>
                                 </div>
-                                <button class="btn-sm mt-2 mb-2">kirim Ucapan</button>
                             </form>
+                            <button id="btn-senducapan" onclick="sendUcapan()"
+                                class="btn btn-sm btn-success mt-2 mb-2">kirim
+                                Ucapan</button>
+                            <button id="btn-senducapan" onclick="getDataUcapan()"
+                                class="btn btn-sm btn-info mt-2 mb-2">get
+                                ucapan</button>
                         </div>
 
-                        <div class="card_trans_white">
+                        <div class="card_trans_white mt-4">
                             <div class="row  justify-content-center">
                                 <div class="col-sm-12">
                                     <p class="text-center">
@@ -317,8 +329,17 @@
     </main>
     <!--=============== AOS JS ===============-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!--=============== fire base  ===============-->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="./assets/js/Firebase.js"></script>
+    <script src="./assets/js/comment.js"></script>
+
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== lightbox JS ===============-->
     <script src="assets/js/lightbox-plus-jquery.min.js"></script>
     <script src="assets/js/lightbox.js"></script>
 </body>

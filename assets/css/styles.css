@@ -473,8 +473,6 @@ img {
   /* background-color: #8a86b9; */
 }
 
-
-
 .quotes {
   background-color: rgba(244, 240, 202, 0.895);
   display: block;
@@ -482,6 +480,13 @@ img {
   padding: 5px 0 0 5px;
 }
 
+.list_comment {
+  background-color: #b76a7e;
+  padding: 5px;
+  width: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+}
 
 /* Change background header */
 .scroll-header {

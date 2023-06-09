@@ -272,16 +272,40 @@
         <!--=============== CONTACTME ===============-->
         <section id="ucapan">
             <div class="container">
-                <div class="row text-center" data-aos="zoom-in">
-                    <div class="ucapan">
+                <div class="row ">
+                    <div class="ucapan" data-aos="zoom-in">
                         <div class="txt_titel">
                             <p class="text-center "><b>Ucapan</b></p>
                         </div>
 
                         <div class="card_trans_white">
-                            <div class="row  justify-content-center">
+                            <form>
+                                <div id="alertUcapan" style="display:none;">
+                                    <div id="alert-version" class="alert alert-success alert-dismissible fade show"
+                                        role="alert">
+                                        <strong id="namaTamu-alert"></strong>
+                                        <p> Jagan Lupa dateng ya.😇 Terima kasih ...</p>
+                                    </div>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label class="text-start">Nama</label>
+                                    <input type="text" class="form-control" id="namaTamu" placeholder="nama"
+                                        maxlength="10">
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label class="text-start"> Ucapan </label>
+                                    <textarea class="form-control" id="ucapanTamu" rows="4" maxlength="100"></textarea>
+                                </div>
+                            </form>
+                            <button id="btn-senducapan" onclick="sendUcapan()"
+                                class="btn btn-sm btn-success mt-2 mb-2">kirim
+                                Ucapan</button>
+                        </div>
+
+                        <div class="card_trans_white mt-3">
+                            <div class="row text-center justify-content-center">
                                 <div class="col-sm-12">
-                                    <p class="text-center">
+                                    <p>
                                         Kami dan keluarga besar mengundang Bapak/Ibu, Saudara/Saudari sekalian,
                                         untuk menghadari moment bahagia kami, mohon maaf apa bila ada kesalahan dalam
                                         penulisan nama dan gelar, kami ucapkan <br>
@@ -291,7 +315,7 @@
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-sm-12 align-self-center">
-                                    <div class="txt-nama2 ">- Maulana & Ikke -</div>
+                                    <div class="txt-nama2  text-center">- Maulana & Ikke -</div>
                                 </div>
                             </div>
                         </div>
@@ -330,9 +354,9 @@
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
-
             </div>
         </section>
     </main>
@@ -342,6 +366,12 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/lightbox-plus-jquery.min.js"></script>
     <script src="assets/js/lightbox.js"></script>
+
+
+    <!--=============== fire base  ===============-->
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+    <script src="./assets/js/Firebase.js"></script>
+    <script src="./assets/js/comment.js"></script>
 </body>
 
 </html>
