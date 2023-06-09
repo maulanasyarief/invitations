@@ -41,7 +41,7 @@ function openUdangan() {
     setTimeout(function () {
         // runing after delay finish
         objCover.style.cssText = `
-            animation: swing-left-fwd 4s ease 1 normal forwards;
+            animation: slide-top 1.5s ease-out 1 normal forwards;
             `;
 
         objMainext.style.display = "block";
@@ -163,7 +163,7 @@ function OnOffMusic() {
 
 function setNamaTamu() {
     //?nama=(nama user)
-    const prmTamuUndangan = urlParams.get('nama');
+    const prmTamuUndangan = urlParams.get('to');
     if (prmTamuUndangan == null) {
         objNamaTamu.textContent = "TAMU UNDANGAN";
     } else {

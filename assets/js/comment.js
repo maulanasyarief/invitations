@@ -1,5 +1,6 @@
 // nama table nya (Node nya di firebase)
-var NodeFirebaseName = "Tbl-Ucapan";
+var prmNodeDB = "Tbl-Ucapan";
+var objDB = firebase.database().ref(prmNodeDB);
 
 // Initialize Firebase
 var prmTotaldata = document.getElementById("txt_totalData");
@@ -7,7 +8,7 @@ const btnSend = document.getElementById("btn-senducapan");
 var prmNama = document.getElementById("namaTamu");
 var prmUcapan = document.getElementById("ucapanTamu");
 var currentdate = Date();
-let prmDataUCapan = [];
+var prmDataUCapan = [];
 
 // lsit dataUcapan
 let prmListDataUcapan = [];
@@ -69,6 +70,10 @@ function sendUcapan() {
                 btnSend.textContent = "Kirim Ucapan";
                 btnSend.disabled = false;
                 //alert("Data Inserted");
+
+                //clear inner html
+                prmListDataUcapan = [];
+                listComment.innerHTML = "";
             })
             .catch((error) => {
                 showAlert(error, true)
@@ -79,12 +84,10 @@ function sendUcapan() {
 }
 
 function getDataUcapan() {
-    var objData = firebase.database().ref("Tbl-Ucapan");
     prmListDataUcapan = [];
-    objData.on("value", function (snapshot) {
 
-        console.log("datalistawal = ", prmListDataUcapan.length);
-        //Semua data
+    objDB.on("value", function (snapshot) {
+
         snapshot.forEach(function (childSnapshot) {
             var prmData = childSnapshot.val();
 
@@ -102,24 +105,27 @@ function getDataUcapan() {
         });
 
 
-        //console.log("datalist = ", prmListDataUcapan.length);
-        // console.log("data = ", JSON.stringify(prmListDataUcapan));
-        prmTotaldata.textContent = "Total Data " + prmListDataUcapan.length
+        //Loping json baru 
         DisplayComment(prmListDataUcapan)
     });
 
 }
 
 function DisplayComment(prmListData) {
+    listComment.innerHTML = "";
 
+    prmTotaldata.textContent = ""
+    prmTotaldata.textContent = "Total Data " + prmListData.length + " Komentar "
+
+    // looping data key
     for (var key in prmListData) {
+        //${ prmListData[key].key }
         listComment.innerHTML += `<div class="card mt-3">
                                         <div class="card-body">
                                             <p class="card-title">
-                                            <input id="prmCheck" type="checkbox" value="${ prmListData[key].key }" /> <b> ${prmListData[key].f01NamaUser} </b></p>
-                                            <h6 class="card-subtitle mb-2 text-muted">${prmListData[key].f03dDate}</h6>
+                                            <input id="prmCheck" type="checkbox" value="1" /> <b> ${prmListData[key].f01NamaUser} </b> | ${ prmListData[key].k01cIdComment}
+                                                <p class="card-subtitle mb-2 text-muted">${prmListData[key].f03dDate}</p>
                                             <p class="card-text">${prmListData[key].f02cNotes}</p>
-                                            <p class="card-text">${ prmListData[key].k01cIdComment}</p>
                                         </div>
                                     </div>`;
     }
@@ -129,7 +135,7 @@ function DisplayComment(prmListData) {
 function RemoveComent() {
     var prmIDComment = document.getElementById("k01cIdComment");
 
-    var objData = firebase.database().ref("Tbl-Ucapan");
-    objData.child(prmIDComment.value).remove();
+    objDB.child(prmIDComment.value.trim()).remove();
+
     console.log("id Di hapus = ", prmIDComment.value)
 }
