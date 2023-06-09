@@ -31,8 +31,8 @@ window.addEventListener('load', () => {
 
     counterdown();
     ShowImageGaleri();
-    // objMainext.style.display = "none";
-    // objMenu.style.display = "none";
+    objMainext.style.display = "none";
+    objMenu.style.display = "none";
     setNamaTamu();
 });
 
@@ -41,14 +41,32 @@ function openUdangan() {
     setTimeout(function () {
         // runing after delay finish
         objCover.style.cssText = `
-            animation: slide-top 1.5s ease-out 1 normal forwards;
+            animation-iteration-count: 1;
+            animation: slide-top 1.5s ease;
             `;
+
+        setTimeout(function () {
+            objCover.style.display = "none";
+        }, 700);
 
         objMainext.style.display = "block";
         objMenu.style.display = "block";
         playAudio();
+
     }, delayInMilliseconds);
 
+    // setTimeout(function () {
+    //     // runing after delay finish
+    //     objCover.style.cssText = `
+    //         animation-iteration-count: 1;
+    //         animation: slide-top 1.5s ease;
+    //         `;
+
+    //     objMainext.style.display = "block";
+    //     objMenu.style.display = "block";
+    //     playAudio();
+
+    // }, delayInMilliseconds);
 }
 
 
