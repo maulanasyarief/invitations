@@ -117,16 +117,35 @@ img {
 }
 
 /*=============== NAV ===============*/
+
+
+.btn_full_screen {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  bottom: 24%;
+  right: 25%;
+  font-size: 25px;
+  color: #67302d;
+  border-radius: 50%;
+  background-color: #f5ada9;
+  box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+  padding: 2px 2px 2px 4px;
+  align-content: center;
+  transition: .4s;
+}
+
+
 .btn_play {
   position: fixed;
   width: 35px;
   height: 35px;
   bottom: 15%;
-  left: 25%;
+  right: 25%;
   font-size: 25px;
-  color: #FFF;
+  color: #67302d;
   border-radius: 50%;
-  background-color: #933f55;
+  background-color: #f5ada9;
   box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
   padding: 2px 2px 2px 4px;
   align-content: center;
@@ -505,7 +524,13 @@ img {
   }
 
   .btn_play {
-    left: 5%;
+    right: 5%;
+    bottom: 10%;
+  }
+
+  .btn_full_screen {
+    right: 5%;
+    bottom: 15%;
   }
 
   .profile {
@@ -555,7 +580,13 @@ img {
   }
 
   .btn_play {
-    left: 5%;
+    right: 5%;
+    bottom: 10%;
+  }
+
+  .btn_full_screen {
+    right: 5%;
+    bottom: 15%;
   }
 
 

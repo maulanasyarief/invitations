@@ -15,9 +15,11 @@ const objGaleri = document.getElementById("img_geleri");
 
 const btnCover = document.getElementById("btnCover");
 const iconSound = document.getElementById("icon-sound");
+const iconScreen = document.getElementById("icon-screen");
 var delayInMilliseconds = 100; //1 second
 
 var prmISplayMusic = false;
+var prmIsFullscreen = false;
 
 // get nama Undangan in URL
 const queryString = window.location.search;
@@ -68,8 +70,6 @@ function openUdangan() {
 
     // }, delayInMilliseconds);
 }
-
-
 
 function scrollActive() {
     const scrollY = window.pageYOffset
@@ -189,4 +189,26 @@ function setNamaTamu() {
         objNamaTamu.textContent = prmTamuUndangan;
     }
     console.log(prmTamuUndangan);
+}
+
+function setFulllscreenMode() {
+    // if (!document.fullscreenElement) {
+    //     document.documentElement.requestFullscreen();
+    // } else if (document.exitFullscreen) {
+    //     document.exitFullscreen();
+    // }
+
+    prmIsFullscreen = document.fullscreenElement;
+
+    if (!prmIsFullscreen) {
+        document.documentElement.requestFullscreen();
+        iconScreen.classList.remove('bx-fullscreen');
+        iconScreen.classList.toggle('bx-exit-fullscreen');
+    } else {
+        document.exitFullscreen();
+        iconScreen.classList.toggle('bx-fullscreen');
+        iconScreen.classList.remove('bx-exit-fullscreen');
+    }
+
+
 }
