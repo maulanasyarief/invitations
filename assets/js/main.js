@@ -41,8 +41,13 @@ function openUdangan() {
     setTimeout(function () {
         // runing after delay finish
         objCover.style.cssText = `
-            animation: slide-top 1.5s ease 1 alternate forwards;
+            animation: slide-top 1.5s ease 1 forwards;
             `;
+        setTimeout(function () {
+            // runing after delay finish
+            objCover.style.display = "none";
+
+        }, 800);
 
         objMainext.style.display = "block";
         objMenu.style.display = "block";
@@ -63,6 +68,7 @@ function openUdangan() {
 
     // }, delayInMilliseconds);
 }
+
 
 
 function scrollActive() {

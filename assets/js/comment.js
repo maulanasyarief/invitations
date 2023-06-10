@@ -70,10 +70,6 @@ function sendUcapan() {
                 btnSend.textContent = "Kirim Ucapan";
                 btnSend.disabled = false;
                 //alert("Data Inserted");
-
-                //clear inner html
-                prmListDataUcapan = [];
-                listComment.innerHTML = "";
             })
             .catch((error) => {
                 showAlert(error, true)
