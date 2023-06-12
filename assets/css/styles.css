@@ -3,6 +3,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 
 /* @font-face {
   font-family: "Great-Vibes";
@@ -81,7 +82,8 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 0.5rem 0 2rem;
+  padding: 0;
+  /* padding: 0.5rem 0 2rem; */
   /* border: #fde8e8 solid 5px; */
 }
 
@@ -238,24 +240,24 @@ img {
 } */
 
 .txt_titel {
-  margin-top: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Rancho';
   font-weight: 200;
   font-style: normal;
   font-size: 24px;
-  line-height: 1;
-  letter-spacing: -.02em;
 }
 
 .txt_titel_pink {
   margin-top: 25px;
-  color: #b76a7e;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 200;
-  font-style: bold;
+  color: #93514e;
+  font-family: 'Rancho';
   font-size: 24px;
-  line-height: 1;
-  letter-spacing: -.02em;
+}
+
+.txt_titel_white {
+  margin-top: 25px;
+  color: #fdf2e6;
+  font-family: 'Rancho';
+  font-size: 24px;
 }
 
 .txt_sambung {
@@ -281,11 +283,16 @@ img {
   animation: zoom-in-out 3s ease infinite;
 }
 
+
+.text_kecil {
+  font-size: 14px;
+}
+
 .txt-nama {
   font-family: 'Great Vibes';
   font-weight: 600;
   font-style: normal;
-  font-size: 58px;
+  font-size: 68px;
   letter-spacing: -.04em;
   /* text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
   color: #eaa2ae;
@@ -294,14 +301,13 @@ img {
 .text-dan {
   font-weight: 600;
   font-style: italic;
-  font-size: 26px;
+  font-size: 36px;
   letter-spacing: -.03em;
-  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: #eaa2ae;
 }
 
 .txt-nama2 {
-  font-family: 'Sriracha';
+  font-family: 'Rancho';
   font-weight: 300;
   font-style: normal;
   font-size: 28px;
@@ -317,39 +323,39 @@ img {
 
 .sampul {
   background-color: #933f55;
+  position: fixed;
+  left: 0px;
+  right: 0px;
   width: 100%;
   height: 100vh;
-  position: fixed;
-  display: block;
-  z-index: 9999;
 }
 
 .sampul-bgtrans {
   background-color: rgba(0, 0, 0, 0.822);
+  left: 0px;
+  right: 0px;
   width: 100%;
-  display: block;
   height: 100vh;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sampul_conten {
-  padding: 5%;
-}
-
-.sampul_conten h1 {
+.sampul h1 {
   padding: 5px;
   font-family: "Great-Vibes";
   font-size: 42px;
   color: #FFF;
 }
 
-.sampul_conten h2 {
+.sampul h2 {
   padding: 15px;
   font-size: 22px;
   color: #FFF;
 }
 
-.sampul_conten p {
+.sampul p {
   padding: 5px;
   font-size: 18px;
   color: #FFF;
@@ -383,21 +389,23 @@ img {
   background-image:
     url('../img/bg_bottom_left.png'),
     url('../img/bg_top_right.png');
-  background-size: 50%;
+  background-size: 35%;
   background-repeat: no-repeat;
+
 }
 
 .profile_content {
-  margin-top: 5%;
-  justify-content: center;
-  padding: 10%;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 25px;
 }
 
 .info {
   width: 50%;
   height: auto;
   margin: 0 auto;
-  color: #67302d;
+  color: #93514e;
   background-color: #f5ada9;
   padding: 25px;
   background-position:
@@ -407,7 +415,7 @@ img {
     url('../img/bg_top_left.png'),
     url('../img/bg_bottom_right.png');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 35%;
 }
 
 .card_trans_white {
@@ -448,7 +456,7 @@ img {
     bottom 0px left 0px;
   background-image: url('../img/bg_top_right.png'), url('../img/bg_bottom_left.png');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 35%;
 }
 
 
@@ -456,13 +464,17 @@ img {
   width: 50%;
   height: auto;
   margin: 0 auto;
-  color: #FFF;
-  background-color: #b76a7e;
+  color: #93514e;
+  background-color: #f5ada9;
   padding: 25px;
   background-position:
+    top 0px left 0px,
     bottom 0px left 0px,
     bottom 0px right 0px;
-  background-image: url('../img/bg_bottom_left.png'), url('../img/bg_bottom_right.png');
+  background-image:
+    url('../img/bg_top_left.png'),
+    url('../img/bg_bottom_left.png'),
+    url('../img/bg_bottom_right.png');
   background-repeat: no-repeat;
   background-size: 35%;
 }
@@ -473,7 +485,7 @@ img {
   margin: 0 auto;
   color: #933f55;
   background-color: #e5a19d;
-  padding-bottom: 65px;
+  padding: 25px;
   background-position:
     top 0px left 0px, top 0px right 0px;
   background-image: url('../img/bg_top_left.png'), url('../img/bg_top_right.png');
