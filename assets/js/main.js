@@ -33,6 +33,7 @@ window.addEventListener('load', () => {
 
     counterdown();
     ShowImageGaleri();
+
     objMainext.style.display = "none";
     objMenu.style.display = "none";
     setNamaTamu();
