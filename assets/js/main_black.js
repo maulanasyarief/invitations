@@ -31,8 +31,7 @@ window.addEventListener('load', () => {
     //Lib aimation on Scroll
     AOS.init();
 
-    counterdown();
-    ShowImageGaleri();
+    // counterdown();
 
     objMainext.style.display = "none";
     objMenu.style.display = "none";
