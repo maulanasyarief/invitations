@@ -258,7 +258,7 @@ img {
     url('../img/batik/bg_top_right.png'),
     url('../img/batik/bg_bottom_left.png'),
     url('../img/batik/bg_bottom_right.png');
-  background-size: 20%;
+  background-size: 10%;
   background-repeat: no-repeat;
 }
 
@@ -271,7 +271,7 @@ img {
   background-image:
     url('../img/batik/bg_left_center.png'),
     url('../img/batik/bg_right_center.png');
-  background-size: 25%;
+  background-size: 15%;
   background-repeat: no-repeat;
 }
 

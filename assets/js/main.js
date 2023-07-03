@@ -32,7 +32,6 @@ window.addEventListener('load', () => {
     AOS.init();
 
     counterdown();
-    ShowImageGaleri();
 
     objMainext.style.display = "none";
     objMenu.style.display = "none";
@@ -157,10 +156,10 @@ function ShowImageGaleri() {
         //console.log(i);
         objGaleri.innerHTML += `
         <div class="col-md-4 mt-2">
-            <a class="example-image-link" href="./assets/img/my/img_` + i + `.jpeg"
+            <a class="example-image-link" href="./assets/img/my/` + i + `.jpeg"
                 data-lightbox="example-set"
                 data-title="klik sisi kanan / kiri foto untuk next foto."><img
-                class="img-thumbnail" src="./assets/img/my/img_` + i + `.jpeg" alt="" /></a>
+                class="img-thumbnail" src="./assets/img/my/` + i + `.jpeg" alt="" /></a>
         </div>
         `;
     }

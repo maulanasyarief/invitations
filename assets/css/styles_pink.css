@@ -1,9 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius:wght@400;600&display=swap");
 
 /* @font-face {
   font-family: "Great-Vibes";
@@ -25,7 +23,7 @@
     --container-color: #FFF;
 
     /*========== Font and typography ==========*/
-    --body-font: 'Open Sans', sans-serif;
+    --body-font: 'Delius', sans-serif;
     --h1-font-size: 0.5rem;
     --normal-font-size: .938rem;
     --tiny-font-size: .625rem;
@@ -240,7 +238,6 @@ img {
 } */
 
 .txt_titel {
-    font-family: 'Rancho';
     font-weight: 200;
     font-style: normal;
     font-size: 24px;
@@ -249,14 +246,12 @@ img {
 .txt_titel_pink {
     margin-top: 25px;
     color: #93514e;
-    font-family: 'Rancho';
     font-size: 24px;
 }
 
 .txt_titel_white {
     margin-top: 25px;
     color: #fdf2e6;
-    font-family: 'Rancho';
     font-size: 24px;
 }
 
@@ -277,7 +272,7 @@ img {
 }
 
 .nama_sambung {
-    font-family: "Great Vibes";
+    font-family: "Water Brush";
     font-size: 32px;
     text-align: center;
     animation: zoom-in-out 3s ease infinite;
@@ -289,7 +284,7 @@ img {
 }
 
 .txt-nama {
-    font-family: 'Great Vibes';
+    font-family: 'Water Brush';
     font-weight: 600;
     font-style: normal;
     font-size: 68px;
@@ -307,7 +302,6 @@ img {
 }
 
 .txt-nama2 {
-    font-family: 'Rancho';
     font-weight: 300;
     font-style: normal;
     font-size: 28px;
